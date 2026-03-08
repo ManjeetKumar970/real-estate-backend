@@ -1,7 +1,6 @@
 package com.chitra.entity;
 
-import javax.print.attribute.standard.DateTimeAtCompleted;
-
+import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -22,10 +21,9 @@ public class Auth {
     private String phone;
     private String name;
     private String gender;
-
     private boolean isVerified;
     private boolean isActive;
-    private DateTimeAtCompleted loginTime;
+    private LocalDateTime loginTime;
     @Column(nullable = true)
     private String profilePicture;
 
@@ -88,7 +86,7 @@ public class Auth {
         return name;
     }
 
-    public DateTimeAtCompleted getLoginTime() {
+    public LocalDateTime getLoginTime() {
         return loginTime;
     }
     public void setName(String name) {
@@ -134,7 +132,7 @@ public class Auth {
     public void setAddress(String address) {
         this.address = address;
     }
-    public void setLoginTime(DateTimeAtCompleted loginTime) {
+    public void setLoginTime(LocalDateTime loginTime) {
         this.loginTime = loginTime;
     }
 }

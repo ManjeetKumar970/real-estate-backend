@@ -1,5 +1,10 @@
 com\chitra\controller\PropertyController.class
 com\chitra\ChitraApplication.class
+com\chitra\repository\AuthRepository.class
+com\chitra\util\JwtUtil.class
 com\chitra\repository\PropertyRepository.class
+com\chitra\service\AuthService.class
 com\chitra\service\PropertyService.class
+com\chitra\controller\AuthController.class
+com\chitra\entity\Auth.class
 com\chitra\entity\Property.class
